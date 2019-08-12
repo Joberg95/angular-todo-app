@@ -1,11 +1,11 @@
+import { Component } from "@angular/core";
 import {
-  Component,
   trigger,
   animate,
   style,
   transition,
   keyframes
-} from "@angular/core";
+} from "@angular/animations";
 
 @Component({
   selector: "app-root",
