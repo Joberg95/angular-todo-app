@@ -1,7 +1,7 @@
 import {
   Component,
-  animate,
   trigger,
+  animate,
   style,
   transition,
   keyframes
