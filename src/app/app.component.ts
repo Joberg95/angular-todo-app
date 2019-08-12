@@ -10,7 +10,11 @@ export class AppComponent {
   todo;
 
   addTodo(value) {
-    this.todoArray.push(value);
+    if (value !== "") {
+      this.todoArray.push(value);
+    }else{
+      alert('Field required **')
+    }
     //console.log(this.todoArray)
   }
 
@@ -20,5 +24,6 @@ export class AppComponent {
         this.todoArray.splice(i, 1);
       }
     }
+    console.log("delete item");
   }
 }
