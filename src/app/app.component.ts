@@ -17,7 +17,7 @@ export class AppComponent {
     }
     //console.log(this.todoArray)
   }
-
+  // delete item
   deleteItem(todo) {
     for (let i = 0; i <= this.todoArray.length; i++) {
       if (todo == this.todoArray[i]) {
@@ -25,5 +25,13 @@ export class AppComponent {
       }
     }
     console.log("delete item");
+  }
+
+  todoSubmit(value:any) {
+    if(value!==""){
+      this.todoArray.push(value.todo)
+    }else{
+      alert('Field required **')
+    }
   }
 }
